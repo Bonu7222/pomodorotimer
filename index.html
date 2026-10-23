@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen focus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+        <header>
+            <h1>Zen Focus</h1>
+            <p class="subtitle">Grow your focus. One session at a time</p>
+        </header>
+
+        <div class="stats">
+            <span>Sessions today</span>
+            <strong id="sessions">0</strong>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="plantCanvas" width="64" height="64"></canvas>
+        </div>
+
+        <div class="timer-container">
+             <div class="mode" itemref="modeLabel">Work</div>
+             <div class="time" id="timeDisplay">25:00</div>
+        </div>
+
+        <div class="controls">
+            <button id="primaryBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
